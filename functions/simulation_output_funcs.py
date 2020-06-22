@@ -116,7 +116,7 @@ def openFile(filePath,
              realisations, T,BT,ST, 
              beta0, gamma, nu,mu,p0, p, Initial, sign,
              TYPE, 
-             functionPrev, functionInc, functionOdea = None):
+             functionPrev, functionInc, functionOdea = None, SIR = False):
     Results = np.load(filePath,
                       allow_pickle=True)
     
@@ -129,7 +129,10 @@ def openFile(filePath,
     I_theoryOdea - if available, O'Dea et al., solution 
     '''
     #realisations
-    Inc = np.zeros(shape = (realisations, T+BT))
+    if SIR:
+        Inc = np.zeros(shape = (realisations, (T+BT)*10))
+    else:
+        Inc = np.zeros(shape = (realisations, T+BT))
     Prev = np.zeros(shape = (realisations, (T+BT)*10))
     Sus = np.zeros(shape = (realisations, (T+BT)*10))
     for r in range(realisations):
