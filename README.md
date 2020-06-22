@@ -1,4 +1,5 @@
 [![Python 3.7.7](https://img.shields.io/badge/python-3.7.7-blue.svg)](https://www.python.org/downloads/release/python-377/)
+![license](https://img.shields.io/github/license/ersouthall/Rate-Of-Incidence-EWS)
 
 # Rate-Of-Incidence-EWS
 Code to accompany "Prospects for detecting early warning signals in discrete event sequence data: application to epidemiological incidence data."
@@ -10,6 +11,8 @@ EWS have a promising potential to not only be used to monitor infectious disease
 
 
 ## Usage
+
+The requirements.txt file lists all Python libraries that the notebooks depend on.
 
 ### Simulations
 This repository has the simulation scripts which were used to get the simulated data in the manuscript.
