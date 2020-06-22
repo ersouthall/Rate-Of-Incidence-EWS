@@ -1,3 +1,5 @@
+[![Python 3.7.7](https://img.shields.io/badge/python-3.7.7-blue.svg)](https://www.python.org/downloads/release/python-377/)
+
 # Rate-Of-Incidence-EWS
 Code to accompany "Prospects for detecting early warning signals in discrete event sequence data: application to epidemiological incidence data."
 
