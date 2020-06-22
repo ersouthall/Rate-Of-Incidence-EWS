@@ -16,7 +16,8 @@ This repository has the simulation scripts which were used to get the simulated 
 - Example output data after running 500 realisations in parallel on a HPC can be found "data/dataHPC/"
 
 ### Incidence, Prevalence and Rate of Incidence 
-Functions contained in `functions/simulation_output_funcs.py` process the Gillespie output data and evaluate the corresponding theoretical solutions. 
+Functions contained in `functions/simulation_output_funcs.py` process the Gillespie output data and evaluate the corresponding theoretical solutions (e.g. the mean-field equations for infecteds and susceptibles, the RoI SDE and the mean of the Poisson Process). 
+
 In particular, `RoI_approximation(..)` calculates the Rate of Incidence from prevalence output ("true RoI", method 1) and on a rolling window from new cases output ("rolling RoI", method 2).
 
 ### Statisitcal Indicators
